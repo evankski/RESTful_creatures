@@ -1,0 +1,8 @@
+<ul>
+    <% myPrehistoric.forEach((prehistoric,i) => { %>
+        <li><%= prehistoric.type %></li>
+        <form action="/prehistoric_creatures/<%=i%>/?_method=DELETE" method="post">
+            <button type="submit">Delete</button>
+        </form>
+    <% }) %>
+</ul>
